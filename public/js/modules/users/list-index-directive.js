@@ -39,14 +39,17 @@ angular.module('usersApp')
     restrict :'A',
     //creating isolated scope. We can do this with out isolated scope as well.
     scope: {
-      listDirective :'='
+      listDirective :'=',
+      groupField :'@'
     },
     templateUrl:'js/modules/users/list-index.html',
     compile: function bindListCompile(el,attr){
       //dummy compile just for future
       return function listLink(scope,element,attrs){
         //get the list field to group by.
-        scope.list_field = attrs['groupField'];
+        //scope.list_field = attrs['groupField'];
+        //thought of making this a variable by usines $attr.$parse. its a overkill
+        scope.list_field = scope.groupField;
         scope.$watch('listDirective',function(val){
           var list_data = scope.listDirective;
           if(!angular.isUndefined(list_data) && !angular.isUndefined(scope.list_field) && list_data !== null && list_data.length>0){

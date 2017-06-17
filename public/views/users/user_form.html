@@ -44,14 +44,16 @@
             			<div class="col-lg-8">
               				<input class="form-control" type="date" ng-model="sel_user.dob" name="dob" id= "dob" placeholder="Date Of Birth" required>
               				<p ng-show="userForm.dob.$invalid && !userForm.dob.$pristine" class="help-block"> Enter Valid Date </p>
+											<p ng-show="invalidDob" class="help-block"> {{invalidDobMsg}} </p>
             			</div>
           </div>
 
-          <div class="form-group" class="{ 'has-error' : userForm.age.$invalid && !userForm.age.$pristine && invalidAge}">
+          <div class="form-group" class="{ 'has-error' : userForm.age.$invalid && !userForm.age.$pristine }">
             			<label class="col-lg-4 control-label">Age:</label>
             			<div class="col-lg-8">
-              				<input class="form-control" type="number" ng-model="sel_user.age" name="age" id= "age" placeholder="Age" min="1" max="100" required>
+              				<input class="form-control" type="number" ng-model="sel_user.age" name="age" id= "age" placeholder="Age" min="0" max="100" required>
               				<p ng-show="userForm.age.$invalid && !userForm.age.$pristine" class="help-block"> Enter Valid Age </p>
+											<p ng-show="invalidAge" class="help-block"> {{invalidAgeMsg}} </p>
             			</div>
           </div>
 

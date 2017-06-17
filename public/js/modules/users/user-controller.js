@@ -30,6 +30,12 @@ angular.module('usersApp')
         console.error(error);
       }
     };
+    var getAge = function(dob){
+      var ageDifMs = Date.now() - dob.getTime();
+      var ageDate = new Date(ageDifMs);
+      //return Math.abs(ageDate.getUTCFullYear()-1970);
+      return (ageDate.getUTCFullYear()-1970);
+    }
     var getToday = function(){
       var today = new Date();
       var dd = today.getDate();
@@ -45,6 +51,8 @@ angular.module('usersApp')
       today = yyyy+'-'+mm+'-'+dd;
       return today;
     };
+
+
     $scope.today = getToday();
 
     //list users method
@@ -97,6 +105,17 @@ angular.module('usersApp')
     //save user method
     $scope.saveUser = function(){
       $scope.sel_user.dob = new Date($scope.sel_user.dob);
+      var ageYears = getAge($scope.sel_user.dob);
+      if(!angular.isUndefined($scope.sel_user.age) && ageYears !== $scope.sel_user.age){
+        if(ageYears <0){
+          $scope.invalidAge = true;
+          $scope.invalidAgeMsg = 'Please enter valid age or DOB';
+          return;
+        }
+        $scope.invalidDob = true;
+        $scope.invalidDobMsg = 'Please enter valid age or DOB';
+        return;
+      }
       userService.saveUser($scope.sel_user)
         .then(function(succeess){
           $state.go('view_all_users');
@@ -119,6 +138,18 @@ angular.module('usersApp')
     }
 
     $scope.resetForm = function(){
+      if($scope.action ==='Add'){
+        $scope.sel_user = {};
+      }else{
+        getUser($scope.sel_user_id)
+          .then(function(user){
+            $scope.sel_user = user;
+            $scope.sel_user.dob = new Date($scope.sel_user.dob);
+          })
+          .catch(function(err){
+            handleError(err);
+          })
+      }
 
     }
 
