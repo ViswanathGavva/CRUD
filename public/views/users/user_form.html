@@ -1,0 +1,69 @@
+
+<div class="row" ng-controller="UserCtrl">
+			<div class="col-md-12">
+        		<div class="text-center">
+
+				<form class="form-horizontal" name="userForm" ng-submit="saveUser()">
+				<uib-alert ng-repeat="error in errors" type="danger" close="closeAlert($index)">{{error}}</uib-alert>
+					<div class="form-group" class="{ 'has-error' : userForm.fname.$invalid && !userForm.fname.$pristine }">
+            			<label class="col-lg-4 control-label">First Name:</label>
+            			<div class="col-lg-8">
+              				<input class="form-control" type="text" ng-model="sel_user.firstname" name="fname" id= "fname" placeholder="First Name" required>
+              				<p ng-show="userForm.fname.$invalid && !userForm.fname.$pristine" class="help-block"> Enter First Name </p>
+            			</div>
+          </div>
+
+          <div class="form-group" class="{ 'has-error' : userForm.lname.$invalid && !userForm.lname.$pristine }">
+            			<label class="col-lg-4 control-label">Last Name:</label>
+            			<div class="col-lg-8">
+              				<input class="form-control" type="text" ng-model="sel_user.lastname" name="lname" id= "lname" placeholder="Last Name" required>
+              				<p ng-show="userForm.lname.$invalid && !userForm.lname.$pristine" class="help-block"> Enter Last Name </p>
+            			</div>
+          </div>
+
+          <div class="form-group" class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            			<label class="col-lg-4 control-label">Email:</label>
+            			<div class="col-lg-8">
+              				<input class="form-control" type="email" ng-model="sel_user.email" name="email" id= "email" placeholder="Email" required>
+              				<p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block"> Enter Valid Email </p>
+            			</div>
+          </div>
+
+          <div class="form-group">
+            			<label class="col-lg-4 control-label">Gender:</label>
+            			<div class="col-lg-8 text-left">
+              				<input  type="radio" ng-model="sel_user.gender" value="M">
+                      Male
+                      <input  type="radio" ng-model="sel_user.gender" value="F">
+                      Female
+            			</div>
+          </div>
+
+          <div class="form-group" class="{ 'has-error' : userForm.dob.$invalid && !userForm.dob.$pristine }">
+            			<label class="col-lg-4 control-label">DOB:</label>
+            			<div class="col-lg-8">
+              				<input class="form-control" type="date" ng-model="sel_user.dob" name="dob" id= "dob" placeholder="Date Of Birth" required>
+              				<p ng-show="userForm.dob.$invalid && !userForm.dob.$pristine" class="help-block"> Enter Valid Date </p>
+            			</div>
+          </div>
+
+          <div class="form-group" class="{ 'has-error' : userForm.age.$invalid && !userForm.age.$pristine && invalidAge}">
+            			<label class="col-lg-4 control-label">Age:</label>
+            			<div class="col-lg-8">
+              				<input class="form-control" type="number" ng-model="sel_user.age" name="age" id= "age" placeholder="Age" min="1" max="100" required>
+              				<p ng-show="userForm.age.$invalid && !userForm.age.$pristine" class="help-block"> Enter Valid Age </p>
+            			</div>
+          </div>
+
+
+					<div class="form-group">
+		            	<div class="col-md-12">
+    	          			<input type="submit" class="btn btn-primary" value="{{action}}">
+        	      			<span></span>
+            	  			<input type="button" class="btn btn-default" value="Reset" ng-click="resetForm()">
+            			</div>
+            		</div>
+				</form>
+        		</div>
+	        </div>
+</div>

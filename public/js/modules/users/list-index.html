@@ -1,0 +1,16 @@
+<div>
+  <div ng-repeat ="(key,sect) in sections">
+    <div class="list_group">
+      <a href="#" ng-click="collapseSection(key)">
+        <h2 class="pullleft">{{key}}-- <span class="badge">{{sect.length}}</span></h2>
+      </a>
+    </div>
+    <div class="sect_items" ng-hide="sect.hide">
+      <ul class="list-group">
+        <li class="list-group-item" ng-repeat ="item in sect track by item.id">
+          <a href="/user/{{item.id}}">{{item[list_field]}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

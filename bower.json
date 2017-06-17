@@ -1,0 +1,34 @@
+{
+  "name": "user_management",
+  "description": "user managmenet for add,delete,update users",
+  "main": "index.js",
+  "authors": [
+    "viswanath"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.16",
+    "angular-mocks": "~1.3.16",
+    "angular-resource": "~1.3.16",
+    "angular-route": "~1.3.16",
+    "angular-ui-router": "0.2.13",
+    "es6-promise": "~3.2.2",
+    "jquery": "2.1.3",
+    "tether": "1.4.0",
+    "bootstrap": "*",
+    "ui-bootstrap": "^2.5.0",
+    "angular-bootstrap": "^2.5.0"
+  },
+  "resolutions": {
+    "angular": "1.3.20"
+  }
+}

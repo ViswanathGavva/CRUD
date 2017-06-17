@@ -1,0 +1,184 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "firstname": "Cesar",
+      "lastname": "Hermiston",
+      "email": "Leora_Hayes@Philip.ca",
+      "dob": "1984-04-02",
+      "age": 23,
+      "gender": "M"
+    },
+    {
+      "id": 1,
+      "firstname": "Mustafa",
+      "lastname": "Wiza",
+      "email": "Kuhlman_Martina@hotmail.com",
+      "dob": "1985-06-02",
+      "age": 75,
+      "gender": "F"
+    },
+    {
+      "id": 2,
+      "firstname": "German",
+      "lastname": "Roob",
+      "email": "Jacobi_Jed@yahoo.com",
+      "dob": "1973-03-14",
+      "age": 52,
+      "gender": "M"
+    },
+    {
+      "id": 3,
+      "firstname": "Leilani",
+      "lastname": "Simonis",
+      "email": "Delaney_Waelchi@Gusikowski.me",
+      "dob": "1985-12-11",
+      "age": 63,
+      "gender": "F"
+    },
+    {
+      "id": 4,
+      "firstname": "Treva",
+      "lastname": "Pouros",
+      "email": "Annie_Kuphal@Lynn.us",
+      "dob": "1999-09-27",
+      "age": 63,
+      "gender": "M"
+    },
+    {
+      "id": 5,
+      "firstname": "Rollin",
+      "lastname": "Volkman",
+      "email": "Kamryn.Roberts@Rickie.ca",
+      "dob": "2002-10-06",
+      "age": 27,
+      "gender": "F"
+    },
+    {
+      "id": 6,
+      "firstname": "Rodrick",
+      "lastname": "McKenzie",
+      "email": "Jeff_Kohler@Waldo.com",
+      "dob": "1989-04-18",
+      "age": 85,
+      "gender": "M"
+    },
+    {
+      "id": 7,
+      "firstname": "Elijah",
+      "lastname": "Hand",
+      "email": "Oberbrunner.Madalyn@Rosina.biz",
+      "dob": "1976-08-12",
+      "age": 66,
+      "gender": "F"
+    },
+    {
+      "id": 8,
+      "firstname": "Gregoria",
+      "lastname": "Mann",
+      "email": "Auer.Alba@Efren.com",
+      "dob": "2011-05-29",
+      "age": 84,
+      "gender": "M"
+    },
+    {
+      "id": 9,
+      "firstname": "Maggie",
+      "lastname": "Roob",
+      "email": "Darby.Moore@hotmail.com",
+      "dob": "2005-01-30",
+      "age": 63,
+      "gender": "F"
+    },
+    {
+      "id": 10,
+      "firstname": "Rickey",
+      "lastname": "Schmidt",
+      "email": "Rutherford_Onie@Kutch.us",
+      "dob": "1991-10-31",
+      "age": 21,
+      "gender": "M"
+    },
+    {
+      "id": 11,
+      "firstname": "Raymond",
+      "lastname": "Torphy",
+      "email": "Rippin.Ozella@yahoo.com",
+      "dob": "1995-10-28",
+      "age": 46,
+      "gender": "F"
+    },
+    {
+      "id": 12,
+      "firstname": "Marcelo",
+      "lastname": "Zboncak",
+      "email": "Gregg.Harris@Jaeden.co.uk",
+      "dob": "2009-05-08",
+      "age": 29,
+      "gender": "M"
+    },
+    {
+      "id": 13,
+      "firstname": "Leda",
+      "lastname": "Klein",
+      "email": "Jacques_Wolf@yahoo.com",
+      "dob": "1978-10-11",
+      "age": 54,
+      "gender": "F"
+    },
+    {
+      "id": 14,
+      "firstname": "Eleonore",
+      "lastname": "Dickens",
+      "email": "Arianna.Towne@yahoo.com",
+      "dob": "2000-02-15",
+      "age": 65,
+      "gender": "M"
+    },
+    {
+      "id": 15,
+      "firstname": "Suzanne",
+      "lastname": "Monahan",
+      "email": "Rodriguez.Nikolas@yahoo.com",
+      "dob": "2000-08-10",
+      "age": 62,
+      "gender": "F"
+    },
+    {
+      "id": 16,
+      "firstname": "Isabelle",
+      "lastname": "Conroy",
+      "email": "Fritsch_Osborne@Marks.ca",
+      "dob": "2007-02-12",
+      "age": 3,
+      "gender": "M"
+    },
+    {
+      "id": 17,
+      "firstname": "Dexter",
+      "lastname": "Cruickshank",
+      "email": "Lucas_Littel@yahoo.com",
+      "dob": "1992-01-15",
+      "age": 14,
+      "gender": "F"
+    },
+    {
+      "id": 18,
+      "firstname": "John",
+      "lastname": "Hilpert",
+      "email": "Armstrong_Queenie@Moore.name",
+      "dob": "2014-08-25",
+      "age": 4,
+      "gender": "M"
+    },
+    {
+      "id": 19,
+      "firstname": "Billy",
+      "lastname": "Smitham",
+      "email": "Stanton_Lang@Zachariah.us",
+      "dob": "2004-07-23",
+      "age": 78,
+      "gender": "F"
+    }
+  ]
+}
